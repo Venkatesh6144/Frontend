@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .product-container {
+            display: flex;
+            padding: 20px;
+        }
+        .product-info {
+            flex: 1; /* takes up 1 portion of the container */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-info img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-details {
+            flex: 2; /* takes up 2 portions of the container */
+            padding-left: 20px;
+        }
+        #add-to-cart {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        select, input[type="number"] {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-info">
+            <img src="images/39b941e3-558d-4450-8afd-201bbd99295b.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1>Embrace Sideboard</h1>
+            <h4>$12999.00 <span>35% Off</span></h4>
+            
+            <div>
+                <h4>Choose Colour:</h4>
+                <input type="checkbox" id="red" name="colour">Red
+                <input type="checkbox" id="blue" name="colour">Blue
+                <input type="checkbox" id="black" name="colour">Black
+            </div>
+            <div>
+                <h4>Choose Size:</h4>
+                <input type="radio" id="small" name="size">Small
+                <input type="radio" id="medium" name="size">Medium
+                <input type="radio" id="large" name="size">Large
+            </div>
+            <select id="color-select">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="pink">Pink</option>
+            </select>
+            <select id="size-select">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xl">Extra Large</option>
+                <option value="xxl">XXL</option>
+            </select>
+            <br>
+            <input type="number" id="quantity" value="1" min="1">
+            <button id="add-to-cart">Add to Cart</button><br>
+            <h4>Description:</h4>
+            <p>The 🧢 symbol represents a scarf or a headscarf, which is a piece of fabric worn around the head, neck, or shoulders for various purposes. Here are some possible meanings and uses of 🧢:</p>
+        </div>
+    </div>
+</body>
+</html>
